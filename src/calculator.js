@@ -23,12 +23,30 @@ function divide(x, y) {
     return x / y;
 }
 
+function modulo(a, b) {
+    return a % b;
+}
+
+function power(base, exponent) {
+    return Math.pow(base, exponent);
+}
+
+function squareRoot(n) {
+    if (n < 0) {
+        throw new Error('Square root of negative number is not allowed.');
+    }
+    return Math.sqrt(n);
+}
+
 // Export functions for unit testing
 module.exports = {
     add,
     subtract,
     multiply,
-    divide
+    divide,
+    modulo,
+    power,
+    squareRoot
 };
 
 // CLI logic
